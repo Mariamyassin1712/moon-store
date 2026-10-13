@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f0e7">
+  <meta name="description" content="Moon Store — إكسسوارات وشنط وأحذية وساعات بتفاصيل أنيقة.">
+  <title>Moon Store | أناقتكِ في كل تفصيلة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline">أناقتكِ في كل تفصيلة <span>✦</span> شحن لجميع محافظات مصر حسب الاتفاق</div>
+  <header class="site-header">
+    <button class="icon-btn menu-toggle" id="menuToggle" aria-label="فتح القائمة">☰</button>
+    <a class="brand" href="#" aria-label="Moon Store الصفحة الرئيسية">
+      <span class="moon">☾<small>✦</small></span>
+      <span class="brand-name">Moon Store</span>
+      <span class="brand-sub">STYLE • ACCESSORIES • MORE</span>
+    </a>
+    <div class="header-actions">
+      <button class="icon-btn" id="searchToggle" aria-label="بحث">⌕</button>
+      <button class="cart-open" id="cartOpen" aria-label="فتح سلة المشتريات">السلة <span id="cartCount">0</span></button>
+    </div>
+    <nav id="mainNav">
+      <a href="#home">الرئيسية</a><a href="#categories">تسوّقي حسب الفئة</a><a href="#products">المنتجات</a><a href="#about">عن Moon Store</a><a href="#contact">تواصلي معنا</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <div class="hero-mark">☾ <span>✦</span></div>
+        <p class="eyebrow">لمسات صغيرة… فرق كبير</p>
+        <h1>Moon Store</h1>
+        <p class="hero-tagline">أناقتكِ في كل تفصيلة</p>
+        <p class="hero-desc">اختاري القطع اللي تشبهك، وكمّلي إطلالتك بلمسة مميزة.</p>
+        <a class="gold-button" href="#products">تسوّقي الآن</a>
+      </div>
+      <div class="hero-art" aria-label="صورة توضيحية لشنطة وإكسسوارات">
+        <div class="sun-glow"></div>
+        <div class="hero-product">✧</div>
+        <div class="hero-caption">ELEGANCE IN EVERY DETAIL</div>
+      </div>
+    </section>
+
+    <section class="section categories-section" id="categories">
+      <div class="section-heading"><span></span><h2>تسوّقي حسب الفئة</h2><span></span></div>
+      <div class="category-list">
+        <button class="category active" data-category="الكل"><span>✧</span>كل المنتجات</button>
+        <button class="category" data-category="شنط"><span>♧</span>شنط</button>
+        <button class="category" data-category="إكسسوارات"><span>◇</span>إكسسوارات</button>
+        <button class="category" data-category="ساعات"><span>◷</span>ساعات</button>
+        <button class="category" data-category="أحذية"><span>♧</span>أحذية</button>
+        <button class="category" data-category="نظارات"><span>◉</span>نظارات</button>
+      </div>
+    </section>
+
+    <section class="section products-section" id="products">
+      <div class="products-top">
+        <div><p class="eyebrow">اختيارات Moon Store</p><h2>قطع مميزة ليكي</h2></div>
+        <label class="search-box" id="searchBox">⌕ <input id="searchInput" type="search" placeholder="ابحثي عن منتج..."></label>
+        <select id="sortSelect" aria-label="ترتيب المنتجات"><option value="featured">ترتيب مميز</option><option value="low">السعر: من الأقل للأعلى</option><option value="high">السعر: من الأعلى للأقل</option></select>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+      <p class="empty-products" id="emptyProducts" hidden>لا توجد منتجات في هذا القسم حاليًا. أضيفي المنتجات في ملف products.js.</p>
+    </section>
+
+    <section class="promo-strip">
+      <div class="promo-copy"><p class="eyebrow">MOON PICKS</p><h2>تفاصيل بسيطة، أناقة مختلفة</h2><p>اختاري إكسسواراتك المفضلة ونسّقيها بطريقتك.</p><a href="#products">اكتشفي المنتجات ←</a></div>
+      <div class="promo-symbol">☾</div>
+    </section>
+
+    <section class="benefits section" id="about">
+      <div><span>✧</span><b>اختيارات مميزة</b><small>قطع مختارة بعناية</small></div>
+      <div><span>□</span><b>طلب سهل</b><small>راجعي طلبك قبل الإرسال</small></div>
+      <div><span>♧</span><b>تواصل مباشر</b><small>متابعة الطلب عبر واتساب</small></div>
+      <div><span>♡</span><b>خدمة عملاء</b><small>نساعدك في الاستفسارات</small></div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <a class="footer-brand" href="#home">☾ Moon Store</a>
+    <p>أناقتكِ في كل تفصيلة</p>
+    <div class="footer-links"><a href="#products">المنتجات</a><a href="#about">من نحن</a><a href="#" id="whatsappLink">واتساب</a></div>
+    <small>© <span id="year"></span> Moon Store — جميع الحقوق محفوظة</small>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="سلة المشتريات" aria-hidden="true">
+    <div class="drawer-head"><h2>سلة المشتريات</h2><button class="icon-btn" id="cartClose" aria-label="إغلاق">✕</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-total"><span>الإجمالي المبدئي</span><strong id="cartTotal">0 ج.م</strong></div>
+    <p class="fine-print">تكلفة الشحن تُحدد حسب المحافظة وتُؤكد قبل إتمام الطلب.</p>
+    <button class="gold-button full" id="checkoutOpen">متابعة وإتمام الطلب</button>
+    <button class="text-button" id="continueShopping">متابعة التسوق</button>
+  </aside>
+
+  <section class="checkout-modal" id="checkoutModal" aria-hidden="true" aria-label="بيانات الطلب">
+    <div class="modal-head"><div><p class="eyebrow">خطوة أخيرة</p><h2>بيانات توصيل الطلب</h2></div><button class="icon-btn" id="checkoutClose" aria-label="إغلاق">✕</button></div>
+    <p class="modal-note">راجعي بياناتك وطلبك. عند الضغط على «إرسال الطلب»، ستُفتح واتساب برسالة جاهزة لإرسالها إلى Moon Store.</p>
+    <form id="checkoutForm">
+      <label>الاسم بالكامل<input name="customerName" required autocomplete="name" placeholder="اكتبي اسمك"></label>
+      <label>رقم الموبايل<input name="customerPhone" required type="tel" autocomplete="tel" pattern="[0-9+()\s-]{8,}" placeholder="01xxxxxxxxx"></label>
+      <label>المحافظة<input name="governorate" required placeholder="مثال: الإسكندرية"></label>
+      <label>العنوان بالتفصيل<textarea name="address" required rows="3" placeholder="المنطقة، الشارع، رقم العقار، علامة مميزة"></textarea></label>
+      <label>ملاحظات (اختياري)<textarea name="notes" rows="2" placeholder="اللون أو المقاس أو أي ملاحظة"></textarea></label>
+      <div class="checkout-summary"><span>إجمالي المنتجات</span><strong id="checkoutTotal">0 ج.م</strong></div>
+      <button class="gold-button full" type="submit">إرسال الطلب عبر واتساب</button>
+      <p class="fine-print">لن يتم خصم أي مبلغ من خلال هذا الموقع. الدفع والشحن يتم الاتفاق عليهما مباشرة.</p>
+      <p class="form-error" id="formError" role="alert"></p>
+    </form>
+  </section>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
