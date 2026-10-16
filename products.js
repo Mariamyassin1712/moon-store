@@ -1,8 +1,3 @@
- {id:"bag-002",name:"شنطة ستتش",category:"شنط",price:200,emoji:"👜",description:"قطعة أنيقة لإطلالتك اليومية",badge:"الأكثر طلبًا"},
-  لكل منتج: id فريد، name الاسم، category الفئة، price السعر بالجنيه، emoji رمز مؤقت،
-  description وصف مختصر، badge شارة اختيارية، oldPrice سعر قديم اختياري.
-  استبدلي emoji بصورة حقيقية لاحقًا بتعديل قالب المنتج في script.js.
-*/
 window.MOON_PRODUCTS = [
   {id:"bag-001",name:"شنطة يد أنيقة",category:"شنط",price:123,emoji:"👜",description:"قطعة أنيقة لإطلالتك اليومية",badge:"الأكثر طلبًا"},
   {id:"jewel-001",name:"طقم إكسسوارات ذهبي",category:"إكسسوارات",price:450,emoji:"✨",description:"لمسة رقيقة للمناسبات والخروجات",badge:"جديد"},
